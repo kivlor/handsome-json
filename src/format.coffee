@@ -79,7 +79,7 @@ format = (json) ->
   try
     parsed = JSON.parse json
   catch error
-    return error
+    throw new Error 'invalid JSON string'
   
   # return render
   render(parsed, yes).trim()
