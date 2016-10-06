@@ -1,0 +1,24 @@
+{
+  "name": "json-formatter",
+  "version": "0.0.1",
+  "description": "format json strings",
+  "keywords": [
+    "json",
+    "format"
+  ],
+  "author": "Andrew Gallagher <andrew.gallagher@temando.com>",
+  "license": "ISC",
+  "main": "lib/formatter.js",
+  "bin": {
+    "jsonformatter": "./lib/cli.js"
+  },
+  "scripts": {
+    "prepublish": "coffee --bare --no-header -o lib/ -c src/ && echo \"#!/usr/bin/env node\n$(cat lib/cli.js)\" > lib/cli.js && chmod +x lib/cli.js",
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.5.3"
+  }
+}
