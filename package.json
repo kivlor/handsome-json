@@ -4,7 +4,8 @@
   "description": "make your json strings handsome",
   "keywords": [
     "json",
-    "format"
+    "format",
+    "handsome"
   ],
   "author": "Andrew Gallagher <kivlor@gmail.com>",
   "license": "ISC",
