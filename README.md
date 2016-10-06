@@ -1,5 +1,7 @@
 ### Handsome JSON
 
+![https://travis-ci.org/kivlor/handsome-json.svg?branch=master](https://travis-ci.org/kivlor/handsome-json.svg?branch=master)
+
 Make your JSON strings handsome.
 
 #### Useage
