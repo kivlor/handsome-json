@@ -6,7 +6,7 @@
     "json",
     "format"
   ],
-  "author": "Andrew Gallagher <andrew.gallagher@temando.com>",
+  "author": "Andrew Gallagher <kivlor@gmail.com>",
   "license": "ISC",
   "main": "lib/formatter.js",
   "bin": {
