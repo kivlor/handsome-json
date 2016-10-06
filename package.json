@@ -8,7 +8,7 @@
   ],
   "author": "Andrew Gallagher <kivlor@gmail.com>",
   "license": "ISC",
-  "main": "lib/formatter.js",
+  "main": "lib/format.js",
   "bin": {
     "handsome": "./lib/cli.js"
   },
