@@ -1,3 +1,3 @@
-### JSON Formatter
+### Handsome JSON
 
-A Node module for formatting JSON strings.
+Make your JSON strings handsome.

@@ -1,7 +1,7 @@
 {
-  "name": "json-formatter",
-  "version": "0.0.1",
-  "description": "format json strings",
+  "name": "handsome-json",
+  "version": "1.0.0",
+  "description": "make your json strings handsome",
   "keywords": [
     "json",
     "format"
@@ -10,7 +10,7 @@
   "license": "ISC",
   "main": "lib/formatter.js",
   "bin": {
-    "jsonformatter": "./lib/cli.js"
+    "handsome": "./lib/cli.js"
   },
   "scripts": {
     "prepublish": "coffee --bare -o lib/ -c src/ && echo \"#!/usr/bin/env node\n$(cat lib/cli.js)\" > lib/cli.js && chmod +x lib/cli.js",
