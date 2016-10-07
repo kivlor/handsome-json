@@ -26,6 +26,18 @@ if process.stdin.isTTY is true
     console.log "Useage: handsome path/to/file.json"
     process.exit()
 
+  # check if the file exists
+  try
+    stats = fs.statSync process.argv[2]
+  catch error
+    console.log "Error: #{process.argv[2]} doesn't exist"
+    process.exit 1
+
+  # check the file isnt' a directory
+  unless stats.isFile() is yes
+    console.log "Error: #{process.argv[2]} is a directory"
+    process.exit 1
+
   # check if file is readable
   try
     fs.accessSync process.argv[2], fs.F_OK
