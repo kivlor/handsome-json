@@ -54,7 +54,13 @@ render = (element, last = no, name = null, depth = 0) ->
   else 
     # check for string using typeof
     if typeof element is 'string'
-      rendered += "\"#{element}\""
+      # escape a bunch of things
+      string = element.replace /\n/g, "\\n"
+                      .replace /\r/g, "\\r"
+                      .replace /"/g, '\\"'
+      
+      # add to rendered
+      rendered += "\"#{string}\""
 
     # check for bool using typeof
     else if typeof element is 'bool'
