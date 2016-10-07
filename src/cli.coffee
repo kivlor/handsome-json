@@ -23,7 +23,7 @@ if process.stdin.isTTY is true
   
   # check we have a file to format
   if process.argv[2] is undefined
-    console.log "Useage: #{process.argv[1]} path/to/file.json"
+    console.log "Useage: handsome path/to/file.json"
     process.exit()
 
   # check if file is readable
