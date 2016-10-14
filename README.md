@@ -6,7 +6,13 @@ Make your JSON strings handsome.
 
 #### Usage
 
-Install via NPM:
+Honestly, just use this one liner in your code:
+
+```
+console.log(JSON.stringify(JSON.parse('{"foo":"bar"}'), null, 2));
+```
+
+Otherwise, install via NPM:
 
 ```
 npm install --save handsome-json
